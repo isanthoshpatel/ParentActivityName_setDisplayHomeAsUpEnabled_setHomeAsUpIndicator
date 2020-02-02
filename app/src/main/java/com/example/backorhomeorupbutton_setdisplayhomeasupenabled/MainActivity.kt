@@ -16,12 +16,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        supportActionBar.run {
-            title = "supportActionBar"
-            this!!.subtitle = "BackOrHomeOrUpButton"
-            setDisplayHomeAsUpEnabled(true)
-            setHomeAsUpIndicator(R.drawable.ic_android_black_24dp)
-        }
+       setTitle("UpOrHome Button")
 
         bt1.setOnClickListener {
             startActivity(Intent(this@MainActivity,Activity2::class.java))
